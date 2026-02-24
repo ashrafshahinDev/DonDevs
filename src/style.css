@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+
+
+@theme {
+  --default-font-family: "Inter", sans-serif;
+
+  --my-gradient: linear-gradient(to right, #4E95FF, #7F5CFF);
+
+  --color-web-1: #7451FD;
+  --color-web-2: #ffffff;
+  --color-web-3: #050111;
+  --color-web-4: #1E1E1F;
+  --color-web-5: #38435C;
+
+  --color-web-6: #1A2130;
+  --color-web-7: #6F7B88;
+  --color-web-8: #A9B0B8;
+  --color-web-9: #E9F0F8;
+  --color-web-10: #45587C;
+
+
+}
+
