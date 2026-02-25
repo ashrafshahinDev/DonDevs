@@ -6,3 +6,8 @@ Font Link: https://fonts.google.com/specimen/Inter
 
 
 
+Nipa - journey, stories
+Rayhan - navbar, hero
+maruf - video, course-module
+nayem - bonus, web-project
+shahin - ready, eyes, FAQ, footer
