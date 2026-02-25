@@ -2,72 +2,1170 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/citlogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    
+    <title>Creative IT Institute – South Asia's Best IT Institute</title>
     <link rel="stylesheet" href="./src/style.css">
-    <title>Final UI Web</title>
   </head>
   <body>
     <!--1 Navbar starts here-----Rayhan -->
-    <section id="Navbar/Rayhan">
-
+    
+      <nav class="navbar text-white  ">
+        <div class="container">
+          <div class="flex items-center justify-between py-4 ">
+            <!-- Logo -->
+            <img src="/citlogo.png" alt="">
+            <!-- <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                <span class="text-white font-black text-sm italic">cit</span>
+                
+              </div>
+              <div class="border-l border-gray-600 pl-3">
+                <p class="text-[9px] uppercase tracking-widest text-gray-400 font-semibold leading-tight">South
+                  Asia's</p>
+                <p class="text-sm font-bold leading-tight">Best IT Institute</p>
+              </div>
+            </div> -->
       
-    </section>
+            <!-- Nav Links (desktop) -->
+            <div class="hidden lg:flex items-center gap-6">
+              <a href="#" class="text-sm text-gray-300 hover:text-white transition-colors font-medium">Courses</a>
+              <a href="#" class="text-sm text-gray-300 hover:text-white transition-colors font-medium">Projects</a>
+              <a href="#" class="text-sm text-gray-300 hover:text-white transition-colors font-medium">Roadmap</a>
+              <a href="#" class="text-sm text-gray-300 hover:text-white transition-colors font-medium">About</a>
+              <a href="#" class="text-sm text-gray-300 hover:text-white transition-colors font-medium">FAQ</a>
+            </div>
+      
+            <!-- CTA -->
+            <div class="hidden font-inter lg:flex items-center gap-3  ">
+              
+              <a href="#" class="btn-primary text-sm">Get Enroll </a>
+            </div>
+      
+            <!-- Hamburger -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+              class="lg:hidden text-gray-300 hover:text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="pb-4">
+            <div class="flex flex-col gap-3 pt-2 border-t border-gray-700">
+              <a href="#" class="text-sm text-gray-300 py-1">Courses</a>
+              <a href="#" class="text-sm text-gray-300 py-1">Projects</a>
+              <a href="#" class="text-sm text-gray-300 py-1">Roadmap</a>
+              <a href="#" class="text-sm text-gray-300 py-1">About</a>
+              <a href="#" class="text-sm text-gray-300 py-1">FAQ</a>
+              <div class="flex gap-3 pt-2 ">
+                
+                <a href="#" class="btn-primary">Get Enroll </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <!-- Navbar ends here ------ -->
-
+    
     <!--2 Hero starts here----- Rayhan-->
+    <section class="hero-section">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+    
+          <!-- Left content -->
+          <div>
+            <span class="section-badge">🚀 South Asia's #1 IT Training</span>
+            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-4">
+              Title Will Be Here<br>
+              <span class="grad-text">Web &amp; Software</span>
+            </h1>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#E34F26">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.413l.213 2.622 10.125 0 -.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+                </svg>
+                HTML5
+              </span>
+              <span class="tech-badge">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#2965F1">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.413l.213 2.622 10.125 0-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+                </svg>
+                CSS3
+              </span>
+              <span class="tech-badge">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#F7DF1E">
+                  <path
+                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+                </svg>
+                JavaScript
+              </span>
+              <span class="tech-badge">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#61DAFB">
+                  <circle cx="12" cy="12" r="2.5" />
+                  <path fill="none" stroke="#61DAFB" stroke-width="1.5"
+                    d="M12 4.5c4.418 0 8 3.358 8 7.5s-3.582 7.5-8 7.5-8-3.358-8-7.5 3.582-7.5 8-7.5z" />
+                  <ellipse fill="none" stroke="#61DAFB" stroke-width="1.5" cx="12" cy="12" rx="3" ry="8" />
+                </svg>
+                React
+              </span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8" style="max-width:480px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <button class="btn-primary flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                View Curriculum
+              </button>
+              <button class="btn-outline flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Watch Demo
+              </button>
+            </div>
+            <div class="flex items-center gap-6 mt-8">
+              <div class="text-center">
+                <p class="text-2xl font-black grad-text">15K+</p>
+                <p class="text-xs text-gray-500 mt-0.5">Students</p>
+              </div>
+              <div class="w-px h-10 bg-gray-700"></div>
+              <div class="text-center">
+                <p class="text-2xl font-black grad-text">120+</p>
+                <p class="text-xs text-gray-500 mt-0.5">Courses</p>
+              </div>
+              <div class="w-px h-10 bg-gray-700"></div>
+              <div class="text-center">
+                <p class="text-2xl font-black grad-text">98%</p>
+                <p class="text-xs text-gray-500 mt-0.5">Job Placement</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right: Booking Form -->
+          <div class="form-card">
+            <h3 class="text-lg font-bold mb-1">Book Your Seat Now</h3>
+            <p class="text-xs text-gray-500 mb-6">Limited seats available. Reserve yours today!</p>
+            <div class="flex flex-col gap-3">
+              <div>
+                <label class="text-xs text-gray-400 mb-1 block font-medium">Full Name</label>
+                <input class="form-input" type="text" placeholder="Enter your full name" />
+              </div>
+              <div>
+                <label class="text-xs text-gray-400 mb-1 block font-medium">Phone Number</label>
+                <input class="form-input" type="tel" placeholder="+880 1XXXXXXXXX" />
+              </div>
+              <div>
+                <label class="text-xs text-gray-400 mb-1 block font-medium">Email Address</label>
+                <input class="form-input" type="email" placeholder="your@email.com" />
+              </div>
+              <div>
+                <label class="text-xs text-gray-400 mb-1 block font-medium">Select Course</label>
+                <select class="form-input">
+                  <option value="">Choose a course</option>
+                  <option>Web Development</option>
+                  <option>Software Engineering</option>
+                  <option>UI/UX Design</option>
+                  <option>Digital Marketing</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-xs text-gray-400 mb-1 block font-medium">Preferred Batch</label>
+                <select class="form-input">
+                  <option value="">Select batch time</option>
+                  <option>Morning – 8:00 AM</option>
+                  <option>Afternoon – 2:00 PM</option>
+                  <option>Evening – 6:00 PM</option>
+                </select>
+              </div>
+              <button class="btn-primary w-full mt-2 text-center py-3 text-sm">
+                Confirm My Seat →
+              </button>
+              <p class="text-center text-xs text-gray-600">By submitting, you agree to our <a href="#"
+                  class="text-indigo-400 hover:underline">Terms & Privacy</a></p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
 
     <!-- hero ends here ------ -->
 
 
      <!--3 Video starts here-----maruf -->
+    <section class="py-20">
+      <div class="container">
+        <div class="text-center mb-10">
+          <span class="section-badge">Watch & Learn</span>
+          <h2 class="section-title">Here Will Be <span class="grad-text">Promotion Video</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    
+        <!-- Video placeholder -->
+        <div class="video-box max-w-3xl mx-auto glow-purple">
+          <!-- Decorative code lines bg -->
+          <div
+            style="position:absolute;inset:0;opacity:0.06;padding:20px;font-family:monospace;font-size:11px;color:#7451FD;overflow:hidden;line-height:1.6;pointer-events:none">
+            const skills = ['HTML','CSS','JS','React'];<br>
+            function learnCoding() {<br>
+            &nbsp;&nbsp;return skills.map(s => master(s));<br>
+            }<br>
+            class Developer {<br>
+            &nbsp;&nbsp;constructor(name) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+            &nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;build() { return 'Amazing Apps'; }<br>
+            }<br>
+            // Start your journey today →
+          </div>
+          <!-- Shield icon -->
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.07">
+            <svg style="width:200px;height:200px;fill:#7451FD" viewBox="0 0 24 24">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+            </svg>
+          </div>
+          <div class="play-btn" onclick="alert('Video would play here!')">
+            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+          <p class="absolute bottom-5 left-0 right-0 text-center text-gray-400 text-sm font-medium">Video Will Be
+            Here</p>
+        </div>
+    
+        <!-- Service teasers below video -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
+          <div class="glass-card p-6">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-sm mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit sed do eiusmod.</p>
+          </div>
+          <div class="glass-card p-6">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-sm mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit sed do eiusmod.</p>
+          </div>
+          <div class="glass-card p-6">
+            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-sm mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit sed do eiusmod.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- video ends here ------ -->
 
      <!--4 course-module starts here-----Maruf -->
+    <section class="py-20" style="background: linear-gradient(180deg, var(--c3) 0%, var(--c4) 50%, var(--c3) 100%);">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Curriculum</span>
+          <h2 class="section-title">Here Will Be <span class="grad-text">Course Module</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco.</p>
+        </div>
+    
+        <div class="grid md:grid-cols-2 gap-4 mb-8">
+          <!-- Module items -->
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-icon">
+              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold mb-1">Module Title Will Be Here</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="text-center">
+          <button class="btn-primary px-8">Load More →</button>
+        </div>
+      </div>
+    </section>
 
     <!-- course-module  ends here ------ -->
 
 
      <!--5 Bonus starts here-----Nayem -->
+    <section class="bonus-section py-20">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Free Learning</span>
+          <h2 class="section-title">Bonus Courses <span class="grad-text">Learn For Free</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua quis nostrud.</p>
+        </div>
+    
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div class="bonus-card">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-semibold mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 mt-2">24 Lessons · Free</p>
+          </div>
+          <div class="bonus-card">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-semibold mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 mt-2">18 Lessons · Free</p>
+          </div>
+          <div class="bonus-card">
+            <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-semibold mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 mt-2">32 Lessons · Free</p>
+          </div>
+          <div class="bonus-card">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h4 class="text-sm font-semibold mb-1">Course Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 mt-2">15 Lessons · Free</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- bonus ends here ------ -->
 
      <!--6 Web-project starts here----- Nayem-->
+    <section class="py-20">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Portfolio</span>
+          <h2 class="section-title">Web Projects <span class="grad-text">Will Be Here</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation.</p>
+        </div>
+    
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <!-- 8 project cards -->
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#1a1040,#2d1b69);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#7451FD" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded-full">HTML</span>
+                <span class="text-[10px] bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full">CSS</span>
+                <span class="text-[10px] bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full">JS</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#0d2137,#1a3a5c);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#4E95FF" fill="currentColor" viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full">React</span>
+                <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Node</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#1a2814,#2d4a1e);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#22c55e" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded-full">PHP</span>
+                <span class="text-[10px] bg-pink-500/20 text-pink-400 px-2 py-0.5 rounded-full">MySQL</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#1f1428,#3d2060);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#a855f7" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M2 12h20M12 2a10 10 0 010 20M12 2c-4 5-4 15 0 20M12 2c4 5 4 15 0 20" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-cyan-500/20 text-cyan-400 px-2 py-0.5 rounded-full">Next.js</span>
+                <span class="text-[10px] bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full">TS</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#141e30,#243b55);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#38bdf8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 4h16v16H4zM4 9h16M9 4v16" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-red-500/20 text-red-400 px-2 py-0.5 rounded-full">Vue</span>
+                <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">API</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#2d1515,#5c2020);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#ef4444" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded-full">Python</span>
+                <span class="text-[10px] bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full">Flask</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#1a1a14,#3d3a1e);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#eab308" fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v8M8 12h8" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full">Laravel</span>
+                <span class="text-[10px] bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded-full">Blade</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#101428,#1a2050);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.3">
+                <svg style="width:50px;height:50px;color:#6366f1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-1 mb-2">
+                <span class="text-[10px] bg-indigo-500/20 text-indigo-400 px-2 py-0.5 rounded-full">GraphQL</span>
+                <span class="text-[10px] bg-pink-500/20 text-pink-400 px-2 py-0.5 rounded-full">TS</span>
+              </div>
+              <h4 class="text-xs font-semibold">Project Title Here</h4>
+              <p class="text-[11px] text-gray-500 mt-1">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Web-project ends here ------ -->
 
 
      <!--7 journey starts here-----Nipa -->
+    <section class="py-20" style="background: linear-gradient(180deg, var(--c3) 0%, var(--c4) 60%, var(--c3) 100%);">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Your Path</span>
+          <h2 class="section-title">An Exciting <span class="grad-text">Journey Roadmap</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua quis nostrud.</p>
+        </div>
+    
+        <!-- Steps grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div class="roadmap-step">
+            <div class="step-num">1</div>
+            <h4 class="font-semibold text-sm mb-2">Journey Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="flex gap-2 mt-3 flex-wrap">
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-green-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg> Beginner Friendly</span>
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-blue-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                </svg> 4 Weeks</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <div class="step-num">2</div>
+            <h4 class="font-semibold text-sm mb-2">Journey Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="flex gap-2 mt-3 flex-wrap">
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-yellow-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg> Intermediate</span>
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-blue-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                </svg> 6 Weeks</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <div class="step-num">3</div>
+            <h4 class="font-semibold text-sm mb-2">Journey Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="flex gap-2 mt-3 flex-wrap">
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-purple-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg> Advanced</span>
+              <span class="text-[10px] text-gray-500 flex items-center gap-1"><svg class="w-3 h-3 text-blue-400"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                </svg> 8 Weeks</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="roadmap-step">
+            <div class="step-num">4</div>
+            <h4 class="font-semibold text-sm mb-2">Journey Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+          <div class="roadmap-step">
+            <div class="step-num">5</div>
+            <h4 class="font-semibold text-sm mb-2">Journey Title Will Be Here</h4>
+            <p class="text-xs text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- journey ends here ------ -->
 
      <!--8 stories starts here-----Nipa -->
+    <section class="py-20">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Success Stories</span>
+          <h2 class="section-title">Our Students <span class="grad-text">Shared Their Stories</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="testi-card">
+            <div class="stars mb-3">★★★★★</div>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            <div class="flex items-center gap-3">
+              <div class="avatar">A</div>
+              <div>
+                <p class="text-sm font-semibold">Student Name</p>
+                <p class="text-xs text-gray-500">Web Developer · Dhaka</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" style="border-color:rgba(116,81,253,0.4);">
+            <div class="stars mb-3">★★★★★</div>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            <div class="flex items-center gap-3">
+              <div class="avatar" style="background:linear-gradient(135deg,#4E95FF,#7F5CFF)">B</div>
+              <div>
+                <p class="text-sm font-semibold">Student Name</p>
+                <p class="text-xs text-gray-500">UI/UX Designer · Chittagong</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars mb-3">★★★★★</div>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            <div class="flex items-center gap-3">
+              <div class="avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">C</div>
+              <div>
+                <p class="text-sm font-semibold">Student Name</p>
+                <p class="text-xs text-gray-500">Full Stack Developer · Sylhet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pagination dots -->
+        <div class="flex justify-center gap-2 mt-8">
+          <span class="w-6 h-2 rounded-full" style="background:var(--grad)"></span>
+          <span class="w-2 h-2 rounded-full bg-gray-600"></span>
+          <span class="w-2 h-2 rounded-full bg-gray-600"></span>
+        </div>
+      </div>
+    </section>
 
     <!-- journey ends here ------ -->
 
 
      <!--9 Ready starts here-----Shahin -->
+    <section class="py-20">
+      <div class="container">
+        <div class="cta-section p-8 md:p-12">
+          <div class="grid lg:grid-cols-2 gap-12 items-start">
+    
+            <!-- Left CTA copy -->
+            <div>
+              <span class="section-badge">Get Started</span>
+              <h2 class="section-title mb-4">Ready To<br><span class="grad-text">Start Your Career</span></h2>
+              <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
+                laboris.
+              </p>
+              <button class="btn-primary flex items-center gap-2 mb-8">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                Enroll Now – It's Free
+              </button>
+    
+              <!-- Tech icons -->
+              <div class="flex flex-wrap gap-3">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(247,223,30,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#F7DF1E">
+                    <path
+                      d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+                  </svg>
+                </div>
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(97,218,251,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#61DAFB">
+                    <circle cx="12" cy="12" r="2.5" />
+                    <ellipse fill="none" stroke="#61DAFB" stroke-width="1.5" cx="12" cy="12" rx="10" ry="4" />
+                    <ellipse fill="none" stroke="#61DAFB" stroke-width="1.5" cx="12" cy="12" rx="10" ry="4"
+                      transform="rotate(60 12 12)" />
+                    <ellipse fill="none" stroke="#61DAFB" stroke-width="1.5" cx="12" cy="12" rx="10" ry="4"
+                      transform="rotate(120 12 12)" />
+                  </svg>
+                </div>
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(78,149,255,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#4E95FF">
+                    <path
+                      d="M12 1.85c-.27 0-.55.07-.78.2L3.78 6.35a1.56 1.56 0 00-.78 1.35v8.6c0 .56.3 1.07.78 1.35l7.44 4.3c.23.13.5.2.78.2s.55-.07.78-.2l7.44-4.3c.48-.28.78-.79.78-1.35v-8.6c0-.56-.3-1.07-.78-1.35L12.78 2.05c-.23-.13-.5-.2-.78-.2z" />
+                  </svg>
+                </div>
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(168,85,247,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#a855f7">
+                    <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                  </svg>
+                </div>
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(239,68,68,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#ef4444">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+                  </svg>
+                </div>
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(34,197,94,0.12)">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#22c55e">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Right CTA form -->
+            <div class="form-card">
+              <h3 class="text-base font-bold mb-1">Book Your Seat Now</h3>
+              <p class="text-xs text-gray-500 mb-5">Fill in the details and we'll get back to you shortly.</p>
+              <div class="flex flex-col gap-3">
+                <input class="form-input" type="text" placeholder="Your Full Name" />
+                <input class="form-input" type="tel" placeholder="Phone Number" />
+                <input class="form-input" type="email" placeholder="Email Address" />
+                <select class="form-input">
+                  <option>Select Course</option>
+                  <option>Web Development</option>
+                  <option>App Development</option>
+                  <option>UI/UX Design</option>
+                </select>
+                <button class="btn-primary w-full py-3 text-center text-sm">Submit Application →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Ready ends here ------ -->
 
      <!-- 10 banner starts here-----Shahin -->
-
+    <section class="banner-section py-16 ">
+      <div class="container ">
+        <div class="text-center">
+          <!-- <span class="section-badge">Limited Offer</span> -->
+          <h2 class="text-6xl md:text-4xl font-black mb-4">Eye Catchy <span class="grad-text">Web Development
+              Banner</span></h2>
+    
+          <!-- Decorative banner card -->
+          
+        </div>
+      </div>
+    </section>
+     
     <!-- banner ends here ------ -->
 
      <!--11  FAQ starts here-----Shahin -->
+    <section class="py-20 ">
+      <div class="container">
+        <div class="text-center mb-12">
+          <span class="section-badge">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked <span class="grad-text">Questions</span></h2>
+          <p class="section-sub mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+            tempor.</p>
+        </div>
+    
+        <!-- FAQ items - max-w-3xl centered -->
+        <div class="max-w-3xl mx-auto flex flex-col gap-3">
+          <div class="faq-item open" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <span>Does This Section For Frequently Asked Question?</span>
+              <svg class="w-4 h-4 text-gray-400 flex-shrink-0 faq-icon transition-transform duration-200 rotate-180"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris.
+            </div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <span>Were This Section For Frequently Asked Question?</span>
+              <svg class="w-4 h-4 text-gray-400 flex-shrink-0 faq-icon transition-transform duration-200" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <span>Story, This Section For Frequently Asked Question?</span>
+              <svg class="w-4 h-4 text-gray-400 flex-shrink-0 faq-icon transition-transform duration-200" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <span>This, Platform For the Frequently Asked Question?</span>
+              <svg class="w-4 h-4 text-gray-400 flex-shrink-0 faq-icon transition-transform duration-200" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <span>Many, Platform For the Frequently Asked Question?</span>
+              <svg class="w-4 h-4 text-gray-400 flex-shrink-0 faq-icon transition-transform duration-200" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-a">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+    
+        <div class="text-center mt-10">
+          <p class="text-sm text-gray-500 mb-4">Still have questions? We're happy to help!</p>
+          <button class="btn-primary px-8">Contact Support</button>
+        </div>
+      </div>
+    </section>
 
     <!-- FAQ ends here ------ -->
 
      <!--12 footer starts here-----Shahin -->
 
+    <footer class=" text-white bg-[#0b0f2a] rounded-t-[25%] py-20  ">
+    
+      <!-- Top section -->
+      <div class="container px-6 py-10 ">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+    
+          <!-- Logo -->
+          <div class="flex items-center gap-4 min-w-fit my-10">
+            <!-- Logo mark -->
+            <img src="/citlogo.png" alt="">
+          </div>
+    
+          <!-- Contact -->
+          <div class="flex-1 pl-20 m-10">
+            <p class="text-sm font-semibold text-gray-300 mb-4">For Any Queries, Feel Free To Contact Us</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <!-- Phone 1 -->
+              <div class="flex items-center gap-2 text-gray-300 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg>
+                <span>017XX XXX XXX</span>
+              </div>
+              <!-- Email 1 -->
+              <div class="flex items-center gap-2 text-gray-300 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <polyline points="3 7 12 13 21 7" />
+                </svg>
+                <span>supposemail.com</span>
+              </div>
+              <!-- Phone 2 -->
+              <div class="flex items-center gap-2 text-gray-300 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg>
+                <span>017XX XXX XXX</span>
+              </div>
+              <!-- Email 2 -->
+              <div class="flex items-center gap-2 text-gray-300 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <polyline points="3 7 12 13 21 7" />
+                </svg>
+                <span>supposemail.com</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Download App -->
+          <div class="min-w-fit">
+            <p class="text-sm font-semibold text-gray-300 mb-4">Download App</p>
+            <div class="flex gap-3">
+              <!-- Google Play -->
+              <a href="#" class="bg-white rounded-xl p-2.5 flex items-center gap-2 hover:opacity-90 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 48 48">
+                  <path fill="#4CAF50" d="M4 26.6L28.4 2.2c.5-.5 1.3-.5 1.8 0l7 7c.5.5.5 1.3 0 1.8L13.6 35.4 4 26.6z" />
+                  <path fill="#F44336"
+                    d="M4 21.4L13.6 12.6l22.8 22.8L13.4 47 4 37.6c-.5-.5-.5-1.3 0-1.8l7-7c.5-.5.5-1.3 0-1.8L4 21.4z" />
+                  <path fill="#FFEB3B" d="M13.6 12.6l22.8 22.8 7-7c.5-.5.5-1.3 0-1.8L13.6 6.2" />
+                  <path fill="#2196F3" d="M4 21.4l7 7c.5.5 1.3.5 1.8 0L35.4 5.8l-7-7c-.5-.5-1.3-.5-1.8 0L4 21.4z" />
+                </svg>
+                <div>
+                  <p class="text-gray-500 text-[8px] leading-tight">GET IT ON</p>
+                  <p class="text-gray-900 text-xs font-bold leading-tight">Google Play</p>
+                </div>
+              </a>
+              <!-- App Store -->
+              <a href="#" class="bg-white rounded-xl p-2.5 flex items-center gap-2 hover:opacity-90 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="#111">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+                <div>
+                  <p class="text-gray-500 text-[8px] leading-tight">Download on the</p>
+                  <p class="text-gray-900 text-xs font-bold leading-tight">App Store</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+      <!-- Divider -->
+      <div class="container px-6 ">
+        <hr class="divider border-t" />
+      </div>
+    
+      <!-- Branch locations -->
+      <div class="container px-6 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+          <!-- Head Office -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Head Office - Main Campus</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">Momtaz Plaza, Dhanmondi, Dhaka</p>
+            <p class="text-gray-400 text-xs leading-relaxed">+880 1777308777, +880 1624666000</p>
+          </div>
+    
+          <!-- Campus 02 -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Campus 02 - Dhanmondi</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">Meher Plaza, Dhanmondi, Dhaka</p>
+            <p class="text-gray-400 text-xs leading-relaxed">+880 1625555444, +880 1990779782</p>
+          </div>
+    
+          <!-- Mirpur -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Mirpur Branch</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">El Mercado, Dhaka 1216</p>
+            <p class="text-gray-400 text-xs leading-relaxed">+88013 100 100 27, +880 1924 222 999</p>
+          </div>
+    
+          <!-- Uttara -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Uttara Branch</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">RAJUK Razib Cosmo Shopping Complex<br>Uttara, Dhaka-1230 +880
+              1990779827</p>
+          </div>
+    
+          <!-- Chattogram -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Chattogram Branch</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">9 No, Kapasgola Road Chawk Bazar, Chattogram</p>
+            <p class="text-gray-400 text-xs leading-relaxed">+880 1847422965, +880 1847422968</p>
+          </div>
+    
+          <!-- Panchagarh -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Panchagarh Branch</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">Abdul Aziz Super Market,<br>Panchagarh Bazar, 01704048383</p>
+          </div>
+    
+          <!-- Canada -->
+          <div class="branch-card p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <h3 class="text-sm font-semibold text-white">Canada Branch</h3>
+            </div>
+            <p class="text-gray-400 text-xs leading-relaxed">61 Lakewood Ave, Saint John, New Brunswick E2J 3N9, Canada +1
+              672-377-9977</p>
+          </div>
+    
+        </div>
+      </div>
+    
+    </footer>
+
     <!-- footer ends here ------ -->
+      <!-- <script>
+        // FAQ toggle
+        function toggleFaq(el) {
+          const isOpen = el.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('open');
+            item.querySelector('.faq-icon').style.transform = '';
+          });
+          if (!isOpen) {
+            el.classList.add('open');
+            el.querySelector('.faq-icon').style.transform = 'rotate(180deg)';
+          }
+        }
+
+        // Initialize first FAQ icon
+        document.querySelector('.faq-item.open .faq-icon').style.transform = 'rotate(180deg)';
+      </script> -->
    
     <script type="module" src="/src/main.js"></script>
   </body>
