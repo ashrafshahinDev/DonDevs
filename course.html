@@ -1,0 +1,481 @@
+<!-- ========================================
+     SECTION: COURSE MODULE
+     2-col accordion · colored icons · Load More · purple glow bg
+     ======================================== -->
+
+<section class=" course-module-section ">
+
+    <!-- Purple arc glow at top -->
+    <div class=" course-glow-arc"></div>
+
+    <div class=" px-5 relative z-10">
+
+        <!-- ── Heading ── -->
+        <div class="text-center mb-12">
+            <h2 class="course-heading">
+                Here Will Be <span class="course-heading-grad">Course Module</span>
+            </h2>
+            <p class="course-sub">
+                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere<br
+                    class="hidden md:block">
+                maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+            </p>
+        </div>
+
+        <!-- ── Accordion Grid ── -->
+        <div class="course-grid ">
+
+            <!-- LEFT COLUMN -->
+            <div class="course-col" id="col-left">
+
+                <!-- Item 1 — OPEN by default, yellow icon -->
+                <div class="acc-item open" data-index="0">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #F9E04B, #F5C518);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron open-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 15l-6-6-6 6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper
+                            turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget
+                            cras in vitae. Semper ut nisl faucibus mattis est et.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 — closed, pink/purple icon -->
+                <div class="acc-item" data-index="2">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #D568FB, #A855F7);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 — closed, cyan icon -->
+                <div class="acc-item" data-index="4">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #22D3EE, #06B6D4);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 — closed, green dark icon -->
+                <div class="acc-item" data-index="6">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #34D399, #10B981);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+            </div><!-- /col-left -->
+
+            <!-- RIGHT COLUMN -->
+            <div class="course-col" id="col-right">
+
+                <!-- Item 1 — OPEN by default, green icon -->
+                <div class="acc-item open" data-index="1">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #4ADE80, #22C55E);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron open-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 15l-6-6-6 6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper
+                            turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget
+                            cras in vitae. Semper ut nisl faucibus mattis est et.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 — closed, orange icon -->
+                <div class="acc-item" data-index="3">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #FB923C, #F97316);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 — closed, slate/gray icon -->
+                <div class="acc-item" data-index="5">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #94A3B8, #64748B);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 — closed, red/pink icon -->
+                <div class="acc-item" data-index="7">
+                    <button class="acc-header" onclick="toggleAcc(this)">
+                        <div class="acc-left">
+                            <div class="acc-icon" style="background: linear-gradient(135deg, #F87171, #EF4444);">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                                    <line x1="9" y1="9" x2="15" y2="9" />
+                                    <line x1="9" y1="13" x2="12" y2="13" />
+                                </svg>
+                            </div>
+                            <span class="acc-title">Module title will be here</span>
+                        </div>
+                        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="acc-body" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+                            Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.</p>
+                    </div>
+                </div>
+
+            </div><!-- /col-right -->
+
+        </div><!-- /course-grid -->
+
+        <!-- ── Load More Button ── -->
+        <div class="flex justify-center mt-12 pb-4">
+            <button class="load-more-btn">
+                Load More
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                </svg>
+            </button>
+        </div>
+
+    </div><!-- /container -->
+</section>
+
+
+<!-- ── STYLES ── -->
+<style>
+    /* Section */
+    .course-module-section {
+        position: relative;
+        width: 100%;
+        background-color: #050111;
+        padding: 80px 0 60px;
+        overflow: hidden;
+    }
+
+    /* Purple radial arc glow at top */
+    .course-glow-arc {
+        position: absolute;
+        top: -220px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 900px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(ellipse at center, rgba(116, 81, 253, 0.45) 0%, rgba(116, 81, 253, 0.15) 40%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Heading */
+    .course-heading {
+        font-family: 'Inter', sans-serif;
+        font-size: clamp(28px, 4.5vw, 52px);
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    /* Gradient italic part */
+    .course-heading-grad {
+        background: linear-gradient(to right, #7451FD, #4E95FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-style: italic;
+    }
+
+    /* Subtitle */
+    .course-sub {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        color: #A9B0B8;
+        line-height: 1.75;
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    /* 2-col grid */
+    .course-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .course-col {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Accordion item */
+    .acc-item {
+        background-color: #1A2130;
+        border: 1px solid #38435C;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: border-color 0.2s;
+    }
+
+    .acc-item.open {
+        border-color: #45587C;
+    }
+
+    /* Accordion header / button */
+    .acc-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        gap: 12px;
+    }
+
+    .acc-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    /* Colored icon box */
+    .acc-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    /* Title */
+    .acc-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: left;
+        line-height: 1.3;
+    }
+
+    /* Chevron */
+    .acc-chevron {
+        flex-shrink: 0;
+        opacity: 0.7;
+        transition: transform 0.25s ease;
+    }
+
+    /* Accordion body */
+    .acc-body {
+        padding: 0 20px 20px 76px;
+    }
+
+    .acc-body p {
+        font-family: 'Inter', sans-serif;
+        font-size: 13.5px;
+        color: #A9B0B8;
+        line-height: 1.75;
+    }
+
+    /* Load more button */
+    .load-more-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 40px;
+        border-radius: 12px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(to right, #7451FD, #4E95FF);
+        transition: opacity 0.2s;
+    }
+
+    .load-more-btn:hover {
+        opacity: 0.88;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+        .course-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .course-glow-arc {
+            width: 500px;
+            top: -150px;
+        }
+
+        .acc-body {
+            padding: 0 16px 18px 16px;
+        }
+
+        .course-module-section {
+            padding: 60px 0 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .acc-header {
+            padding: 14px 16px;
+        }
+
+        .acc-title {
+            font-size: 14px;
+        }
+
+        .load-more-btn {
+            padding: 12px 28px;
+            font-size: 14px;
+        }
+    }
+</style>
+
+
+<!-- ── ACCORDION JS ── -->
+<script>
+    function toggleAcc(btn) {
+        const item = btn.closest('.acc-item');
+        const body = item.querySelector('.acc-body');
+        const chevron = btn.querySelector('.acc-chevron');
+        const isOpen = item.classList.contains('open');
+
+        if (isOpen) {
+            // Close
+            item.classList.remove('open');
+            body.style.display = 'none';
+            // Switch to down chevron
+            chevron.innerHTML = '<path d="M6 9l6 6 6-6"/>';
+            chevron.classList.remove('open-chevron');
+        } else {
+            // Open
+            item.classList.add('open');
+            body.style.display = 'block';
+            // Switch to up chevron
+            chevron.innerHTML = '<path d="M18 15l-6-6-6 6"/>';
+            chevron.classList.add('open-chevron');
+        }
+    }
+</script>
