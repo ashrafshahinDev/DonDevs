@@ -46,7 +46,265 @@
 
      <!--7 journey starts here-----Nipa -->
 
+
+<!-- ===== Smooth Figma Background ===== -->
+<style>
+        body { 
+            background-color: #01011f; 
+            color: white;
+            margin: 0;
+            background-image: radial-gradient(
+                ellipse 60% 50% at 50% 50%, 
+                rgba(168, 168, 246, 0.699) 0%, 
+                transparent 100%
+            );
+            background-repeat: no-repeat;
+        }
+
+        .card-glow {
+            position: relative;
+            background-color: #0d0d1a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover state handles dynamic border and glow */
+        .card-glow:hover {
+            border-color: var(--card-color);
+            box-shadow: 0 0 20px var(--card-color);
+            transform: translateY(-5px) scale(1.02);
+        } 
+    </style>
+
+    
+<!-- ================= ROADMAP ================= -->
+<section class="max-w-6xl mx-auto px-4 py-24">
+
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4">An Exciting <span class="text-black-500 italic">Journey Roadmap</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm">
+                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. 
+                Felis posuere maecenas interdum sit cras.
+            </p>
+        </div>
+
+        <div id="roadmap" class="grid grid-cols-1 md:grid-cols-6 gap-6">
+        </div>
+    </div>
+  <!-- Top 3 -->
+<script>
+        const steps = [
+            { id: 1, color: '#a855f7' },
+            { id: 2, color: '#22c55e' },
+            { id: 3, color: '#f97316' },
+            { id: 4, color: '#ef4444' },
+            { id: 5, color: '#3b82f6' },
+        ];
+
+        const container = document.getElementById('roadmap');
+
+        // Loop corrected: removed double loop and fixed template literals
+        steps.forEach((step, index) => {
+            const card = document.createElement('div');
+            
+            // Set the dynamic color variable
+            card.style.setProperty('--card-color', step.color);
+            
+            // Logic for spanning: first 3 cards take 2 columns, last 2 take 3 columns
+            let spanClass = (index < 3) ? "md:col-span-2" : "md:col-span-3";
+
+            card.className = `${spanClass} card-glow p-8 rounded-2xl shadow-xl transition-all duration-300`;
+            
+            card.innerHTML = `
+                <div class="flex items-center mb-4">
+                    <div class="bg-gray-800 px-4 py-2 rounded font-bold text-sm shrink-0 border border-gray-700">
+                        ${step.id}
+                    </div>
+                    <div class="h-[2px] flex-grow" 
+                         style="background: linear-gradient(90deg, ${step.color}, transparent); margin-left: 0;">
+                    </div>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-white">Journey Title Will Be Here</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. 
+                    Dictum pharetra nisi donec neque ut mauris nulla eros.
+                </p>
+            `;
+            
+            container.appendChild(card);
+        });
+    </script>
+
+</section>
+
+<!-- ================= STUDENT SECTION ================= -->
+
+<section class="bg-[#0f172c] py-24 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 text-center ">
+
+    <!-- Heading -->
+   <!-- Heading -->
+<h2 class="text-5xl font-bold text-white mb-6">
+  An exciting
+  <span class="text-indigo-400 italic">journey roadmap</span>
+</h2>
+
+<!-- Paragraph -->
+<p class="text-gray-400 max-w-3xl mx-auto text-sm mb-10">
+  Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+</p>
+
+     
+
+    <!-- Slider Wrapper -->
+    <div class="relative overflow-hidden">
+
+      <div id="track"
+        class="flex gap-6 transition-transform duration-700 ease-in-out">
+
+        <!-- CARD 1 -->
+        <div class="min-w-full lg:min-w-[31%] flex-shrink-0">
+          <div class="bg-[#eff8f2] rounded-2xl p-6 shadow-lg flex gap-4 items-center h-44">
+
+            <img src="https://source.unsplash.com/100x100/?woman"
+              class="w-20 h-20 rounded-xl object-cover">
+
+
+            <div>
+               <div class="mb-2 text-left">
+        <span class="font-bold text-sm text-gray-900">5.0</span>
+        <span class="text-orange-400 text-xs">★★★★★</span>
+    </div>
+
+                <p class="max-w-[450px] mx-auto text-center leading-relaxed line-clamp-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.
+              </p>
+              <h4 class="text-gray-900 font-semibold mt-3">
+                Farhan Rafi
+              </h4>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="min-w-full lg:min-w-[31%] flex-shrink-0">
+          <div class="bg-white rounded-2xl p-6 shadow-lg flex gap-4 items-center h-44">
+
+            <img src="https://source.unsplash.com/100x100/?man"
+              class="w-20 h-20 rounded-xl object-cover">
+
+            <div>
+                 <div class="mb-2 text-left">
+        <span class="font-bold text-sm text-gray-900">5.0</span>
+        <span class="text-orange-400 text-xs">★★★★★</span>
+    </div>
+              <p class="max-w-[450px] mx-auto text-center leading-relaxed line-clamp-5 text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.
+              </p>
+              <h4 class="text-gray-900 font-semibold mt-3">
+                Rahim Ahmed
+              </h4>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="min-w-full lg:min-w-[31%] flex-shrink-0">
+          <div class="bg-white rounded-2xl p-6 shadow-lg flex gap-4 items-center h-44">
+
+            <img src="https://source.unsplash.com/100x100/?girl"
+              class="w-20 h-20 rounded-xl object-cover">
+
+            <div>
+                 <div class="mb-2 text-left">
+        <span class="font-bold text-sm text-gray-900">5.0</span>
+        <span class="text-orange-400 text-xs">★★★★★</span>
+    </div>
+              <p class="max-w-[450px] mx-auto text-center leading-relaxed line-clamp-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.
+              </p>
+              <h4 class="text-gray-900 font-semibold mt-3">
+                Sumaiya Islam
+              </h4>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="min-w-full lg:min-w-[31%] flex-shrink-0">
+          <div class="bg-white rounded-2xl p-6 shadow-lg flex gap-4 items-center h-44">
+
+            <img src="https://source.unsplash.com/100x100/?student"
+              class="w-20 h-20 rounded-xl object-cover">
+
+            <div>
+                 <div class="mb-2 text-left">
+        <span class="font-bold text-sm text-gray-900">5.0</span>
+        <span class="text-orange-400 text-xs">★★★★★</span>
+    </div>
+              <p class="max-w-[450px] mx-auto text-center leading-relaxed line-clamp-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.
+              </p>
+              <h4 class="text-gray-900 font-semibold mt-3">
+                Tanvir Hasan
+              </h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DASH INDICATOR -->
+    <div class="flex justify-center gap-3 mt-12">
+      <div class="dash h-[3px] w-6 bg-white"></div>
+      <div class="dash h-[3px] w-6 bg-white/30"></div>
+      <div class="dash h-[3px] w-6 bg-white/30"></div>
+      <div class="dash h-[3px] w-6 bg-white/30"></div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const track = document.getElementById("track");
+  const dashes = document.querySelectorAll(".dash");
+
+  let index = 0;
+  const total = 4;
+
+  function updateSlider() {
+    const cardWidth = track.children[0].offsetWidth + 24;
+    const maxIndex = total - 3;
+
+    if (index > maxIndex) index = 0;
+
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    dashes.forEach((dash, i) => {
+      dash.classList.remove("bg-white");
+      dash.classList.add("bg-white/30");
+
+      if (i === index) {
+        dash.classList.remove("bg-white/30");
+        dash.classList.add("bg-white");
+      }
+    });
+  }
+
+  setInterval(() => {
+    index++;
+    updateSlider();
+  }, 3000);
+
+  updateSlider();
+</script>
     <!-- journey ends here ------ -->
+
 
      <!--8 stories starts here-----Nipa -->
 
