@@ -247,7 +247,7 @@ body {
 
 /* ===================== MODULE SECTION ===================== */
 .module-item {
-  background: var(--c6);
+  /* background-image: url("../images/courses/coursebg.png"); */
   border: 1px solid rgba(56, 67, 92, 0.5);
   border-radius: 10px;
   padding: 16px 20px;
@@ -275,6 +275,7 @@ body {
 
 /* ===================== BONUS COURSES ===================== */
 .bonus-section {
+  
   background: linear-gradient(135deg, #0e0a2e 0%, #1a1040 50%, #0e0a2e 100%);
   border-top: 1px solid rgba(116, 81, 253, 0.2);
   border-bottom: 1px solid rgba(116, 81, 253, 0.2);
