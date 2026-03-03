@@ -69,7 +69,7 @@ body {
   border-radius: 6px;
   font-weight: 600;
   font-size: 14px;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   border: none;
   transition: opacity 0.2s, transform 0.2s;
@@ -87,7 +87,7 @@ body {
   border-radius: 6px;
   font-weight: 600;
   font-size: 14px;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   border: 1px solid var(--c5);
   transition: border-color 0.2s, background 0.2s;
