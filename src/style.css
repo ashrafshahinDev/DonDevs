@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* @theme {
   --default-font-family: "Inter", sans-serif;
 
@@ -21,21 +23,23 @@
 /* ===================== CSS VARIABLES ===================== */
 
 @theme {
-  --font: 'Inter', sans-serif;
-  --grad: linear-gradient(to right, #4E95FF, #7F5CFF);
-  --c1: #7451FD;
-  --c2: #ffffff;
-  --c3: #050111;
-  --c4: #1E1E1F;
-  --c5: #38435C;
-  --c6: #1A2130;
-  --c7: #6F7B88;
-  --c8: #A9B0B8;
-  --c9: #E9F0F8;
-  --c10: #45587C;
+  --font: "Inter", sans-serif;
+  --grad: linear-gradient(to right, #4e95ff, #7f5cff);
+  --grad1: #7f5cff;
+  --grad2: #4e95ff;
+  --grad3: linear-gradient(90deg, #4e95ff 0%, #7f5cff 100%);
+  --grad4: bg-linear-to-r from-[var(--grad1)] to-[var(--grad2)];
+  --c1:  #7451fd;
+  --c2:  #ffffff;
+  --c3:  #050111;
+  --c4:  #1e1e1f;
+  --c5:  #38435c;
+  --c6:  #1a2130;
+  --c7:  #6f7b88;
+  --c8:  #A9B0B8;
+  --c9:  #e9f0f8;
+  --c10: #45587c;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -72,7 +76,9 @@ body {
   /* display: inline-block; */
   cursor: pointer;
   border: none;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
 }
 
 .btn-primary:hover {
@@ -90,7 +96,9 @@ body {
   /* display: inline-block; */
   cursor: pointer;
   border: 1px solid var(--c5);
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .btn-outline:hover {
@@ -102,7 +110,7 @@ body {
   /* display: inline-block; */
   background: #fbff8d;
   border: 1px solid rgba(116, 81, 253, 0.35);
-  color: #9B7FFF;
+  color: #9b7fff;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -132,7 +140,9 @@ body {
   background: var(--c6);
   border: 1px solid rgba(56, 67, 92, 0.5);
   border-radius: 12px;
-  transition: border-color 0.25s, transform 0.25s;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
 }
 
 .glass-card:hover {
@@ -153,8 +163,17 @@ body {
 
 /* ===================== HERO ===================== */
 .hero-section {
-  background: radial-gradient(ellipse 80% 60% at 20% 50%, rgba(116, 81, 253, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 30%, rgba(78, 149, 255, 0.12) 0%, transparent 60%),
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 20% 50%,
+      rgba(116, 81, 253, 0.18) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 80% 30%,
+      rgba(78, 149, 255, 0.12) 0%,
+      transparent 60%
+    ),
     var(--c3);
   min-height: 90vh;
   display: flex;
@@ -166,7 +185,7 @@ body {
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237451FD' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -180,7 +199,6 @@ body {
   border: 1px solid rgba(56, 67, 92, 0.6);
   border-radius: 16px;
   padding: 28px;
-
 }
 
 .form-input {
@@ -215,14 +233,17 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-
 }
 
 .video-box::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(116, 81, 253, 0.15), transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(116, 81, 253, 0.15),
+    transparent 70%
+  );
 }
 
 .play-btn {
@@ -255,7 +276,6 @@ body {
   align-items: flex-start;
   gap: 12px;
   transition: border-color 0.2s;
-
 }
 
 .module-item:hover {
@@ -275,7 +295,6 @@ body {
 
 /* ===================== BONUS COURSES ===================== */
 .bonus-section {
-  
   background: linear-gradient(135deg, #0e0a2e 0%, #1a1040 50%, #0e0a2e 100%);
   border-top: 1px solid rgba(116, 81, 253, 0.2);
   border-bottom: 1px solid rgba(116, 81, 253, 0.2);
@@ -288,8 +307,10 @@ body {
   border-radius: 12px;
   padding: 24px 20px;
   text-align: center;
-  transition: background 0.2s, border-color 0.2s, transform 0.2s;
-
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
 }
 
 .bonus-card:hover {
@@ -304,8 +325,9 @@ body {
   border: 1px solid rgba(56, 67, 92, 0.5);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.25s, transform 0.25s;
-
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
 }
 
 .project-card:hover {
@@ -363,7 +385,7 @@ body {
 }
 
 .stars {
-  color: #FACC15;
+  color: #facc15;
   font-size: 13px;
   letter-spacing: 1px;
 }
@@ -384,7 +406,12 @@ body {
 
 /* ===================== CTA SECTION ===================== */
 .cta-section {
-  background: radial-gradient(ellipse 70% 80% at 30% 50%, rgba(116, 81, 253, 0.25) 0%, transparent 65%),
+  background:
+    radial-gradient(
+      ellipse 70% 80% at 30% 50%,
+      rgba(116, 81, 253, 0.25) 0%,
+      transparent 65%
+    ),
     var(--c4);
   border-radius: 20px;
 }
@@ -404,7 +431,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: border-color 0.2s;
-
 }
 
 .faq-item:hover {
@@ -441,7 +467,6 @@ body {
 .footer-bg {
   background: var(--c3);
   border-top: 1px solid rgba(56, 67, 92, 0.35);
-  
 }
 
 /* ===================== SERVICES MARQUEE ===================== */
@@ -513,8 +538,6 @@ body {
   display: block;
 }
 
-===================================+++
-
 /* Section */
 .course-module-section {
   position: relative;
@@ -533,14 +556,19 @@ body {
   width: 900px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgba(116, 81, 253, 0.45) 0%, rgba(116, 81, 253, 0.15) 40%, transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(116, 81, 253, 0.45) 0%,
+    rgba(116, 81, 253, 0.15) 40%,
+    transparent 70%
+  );
   pointer-events: none;
   z-index: 0;
 }
 
 /* Heading */
 .course-heading {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(28px, 4.5vw, 52px);
   font-weight: 800;
   color: #ffffff;
@@ -550,7 +578,7 @@ body {
 
 /* Gradient italic part */
 .course-heading-grad {
-  background: linear-gradient(to right, #7451FD, #4E95FF);
+  background: linear-gradient(to right, #7451fd, #4e95ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -559,9 +587,9 @@ body {
 
 /* Subtitle */
 .course-sub {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
-  color: #A9B0B8;
+  color: #a9b0b8;
   line-height: 1.75;
   max-width: 760px;
   margin: 0 auto;
@@ -583,15 +611,15 @@ body {
 
 /* Accordion item */
 .acc-item {
-  background-color: #1A2130;
-  border: 1px solid #38435C;
+  background-color: #1a2130;
+  border: 1px solid #38435c;
   border-radius: 14px;
   overflow: hidden;
   transition: border-color 0.2s;
 }
 
 .acc-item.open {
-  border-color: #45587C;
+  border-color: #45587c;
 }
 
 /* Accordion header / button */
@@ -626,7 +654,7 @@ body {
 
 /* Title */
 .acc-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #ffffff;
@@ -647,9 +675,9 @@ body {
 }
 
 .acc-body p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13.5px;
-  color: #A9B0B8;
+  color: #a9b0b8;
   line-height: 1.75;
 }
 
@@ -660,13 +688,13 @@ body {
   gap: 10px;
   padding: 14px 40px;
   border-radius: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #ffffff;
   border: none;
   cursor: pointer;
-  background: linear-gradient(to right, #7451FD, #4E95FF);
+  background: linear-gradient(to right, #7451fd, #4e95ff);
   transition: opacity 0.2s;
 }
 
@@ -708,6 +736,3 @@ body {
     font-size: 14px;
   }
 }
-
-
-@import "tailwindcss";
